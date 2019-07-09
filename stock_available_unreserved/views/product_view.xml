@@ -54,7 +54,8 @@
             <field name="inherit_id"
                    ref="stock.product_template_form_view_procurement_button"/>
              <field name="arch" type="xml">
-                <div name="button_box" position="inside">
+                <xpath expr="//button[@name='%(stock.action_stock_level_forecast_report_template)d']"
+                position="after">
                     <button type="object"
                         name="action_open_quants_unreserved"
                         attrs="{'invisible':[('type', '!=', 'product')]}"
@@ -62,7 +63,7 @@
                         <field name="qty_available_not_res" widget="statinfo"
                                string="Unreserved"/>
                     </button>
-                </div>
+                </xpath>
             </field>
         </record>
 
@@ -72,7 +73,8 @@
             <field name="inherit_id"
                    ref="stock.product_form_view_procurement_button"/>
             <field name="arch" type="xml">
-                <div name="button_box" position="inside">
+                <xpath expr="//button[@name='%(stock.action_stock_level_forecast_report_product)d']"
+                position="after">
                     <button class="oe_stat_button"
                             name="%(product_open_quants_unreserved)d"
                             icon="fa-building-o"
@@ -80,7 +82,7 @@
                         <field name="qty_available_not_res" widget="statinfo"
                                string="Unreserved"/>
                     </button>
-                </div>
+                </xpath>
             </field>
         </record>
 
