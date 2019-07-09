@@ -79,9 +79,9 @@ msgstr "Stock disponible (sin reservas)"
 #: model_terms:ir.ui.view,arch_db:stock_available_unreserved.product_form_view_procurement_button
 #: model_terms:ir.ui.view,arch_db:stock_available_unreserved.product_template_form_view_procurement_button
 msgid "Unreserved"
-msgstr "No reservado"
+msgstr "Disponible"
 
 #. module: stock_available_unreserved
 #: model_terms:ir.ui.view,arch_db:stock_available_unreserved.product_template_kanban_stock_view
 msgid "Unreserved:"
-msgstr "No reservado"
+msgstr "Disponible"
